@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#game {
+  width: 80vw;
+  height: 250px;
+  border: 1px solid orange;
+  margin: 0 auto;
+  margin-top: 20vh;
+  background: olivedrab;
+}
+
+#game h3 {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 32px;
+  font-family: 'Monoton', cursive;
+  color: bisque;
+}
+
+#playerOne {
+  width: 30px;
+  height: 50px;
+  /* background-color: #ff0000; */
+  position: relative;
+  top: 150px;
+  background: url('img/playerOne.gif') no-repeat left top;
+  background-size: contain;
+}
+
+.animate {
+  animation: jump 1s infinite linear;
+}
+
+#playerVersus {
+  width: 75px;
+  height: 40px;
+  /* background-color: #0000ff; */
+  background: url('img/playerVersus.gif') no-repeat left top;
+  background-size: contain;
+  position: relative;
+  top: 110px;
+  left: 415px;
+  animation: playerVersus 2s infinite linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  50% {
+    top: 50px;
+  }
+  70% {
+    top: 50px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+@keyframes playerVersus {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: -40px;
+  }
+}
