@@ -11,6 +11,38 @@
   margin: 0 auto;
   margin-top: 20vh;
   background: olivedrab;
+  position: relative;
+}
+
+#controller {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+}
+
+#controller button {
+  display: block;
+}
+
+#controller button#jump {
+  border: 5px solid orange;
+  background: orangered;
+  padding: 20px 50px;
+  color: white;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+#controller button#reset {
+  border: 5px solid grey;
+  background: white;
+  color: darkslategray;
+  font-size: 16px;
+  padding: 10px 30px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 #game h3 {
@@ -70,4 +102,32 @@
   100% {
     left: -40px;
   }
+}
+
+#playerOneBubble {
+  width: 300px;
+  margin: 50px auto;
+  background: #00bfb6;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  font-family: arial;
+  position: absolute;
+  bottom: 40px;
+  left: 30px;
+  display: none;
+}
+
+#playerOneBubble:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #00bfb6;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #00bfb6;
+  border-bottom: 10px solid transparent;
+  left: 19px;
+  bottom: -19px;
 }
